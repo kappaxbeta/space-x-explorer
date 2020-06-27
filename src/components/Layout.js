@@ -121,7 +121,7 @@ const Layout = (props) => {
         <Grommet full theme={theme}>
             <Box
              fill="horizontal" overflow="auto" align="start" flex="grow" direction="column" justify="start" pad="small">
-                <Header align="start" direction="row-responsive" flex={true} justify="center" gap="medium" pad="small" fill="vertical" margin={"medium"}>
+                <Header align="start" direction="row-responsive" flex={true} justify="center" gap="medium"  fill="vertical" margin={"medium"}>
                     <NavLink to={"/"} style={{textDecoration: "none"}}>
                     <Box align="center" justify="center" round={"small"} pad={"small"} background={current === "home" ?"selected" : "grey"}>
                         <Text>

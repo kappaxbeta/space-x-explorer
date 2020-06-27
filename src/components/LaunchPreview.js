@@ -9,7 +9,7 @@ const LaunchPreview = (props) => {
 
     return (
         <NavLink to={`/l/${launch.flight_number}`} style={{textDecoration: "none"}}>
-            <Box animation={{type: "fadeIn"}} overflow={"hidden"} margin={"small"} border={{ color: 'brand', size: 'small' }} height={"medium"} width={"medium"} direction={"row"} align={"end"} round={"small"} style={{position: "relative"}}>
+            <Box animation={{type: "fadeIn"}} overflow={"hidden"} margin={{"vertical":"small", "right": "medium"}} border={{ color: 'brand', size: 'small' }} height={"medium"} width={"medium"} direction={"row"} align={"end"} round={"small"} style={{position: "relative"}}>
               <Img cache={true} src={launch.links.flickr_images[0]} error={"/error.png"} placeholder={"/loading.gif"} width={"600"} />
                <Box  pad={"medium"} background={"white"}  round={"small"} margin={"large"} style={{position: "absolute", bottom: "1rem"}} >
                     <Text size={"xlarge"}>#{launch.flight_number}</Text>
@@ -26,7 +26,7 @@ LaunchPreview.propTypes = {
         flight_number: PropTypes.number.isRequired,
         mission_name: PropTypes.string.isRequired,
         launch_date_utc: PropTypes.string.isRequired,
-        links: PropTypes.array
+        links: PropTypes.any
     })
 };
 
