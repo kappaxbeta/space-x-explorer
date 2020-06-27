@@ -16,7 +16,7 @@ export default () => {
     }, [dispatch, id]);
 
     return (
-        <Box pad={"medium"} flex={false} fill="vertical" direction="row">
+        <Box pad={"small"} flex={false} fill="vertical" direction="row">
             <LunchDetail launch={launch}/>
         </Box>
     )

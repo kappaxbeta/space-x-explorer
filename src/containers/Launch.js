@@ -12,11 +12,11 @@ export default () => {
     }, [dispatch]);
 
     return (
-        <Box  pad={"medium"} >
+        <Box  pad={"small"} >
             <Heading>All SpaceX Launches</Heading>
             <Box  flex={false} fill="vertical" direction="row" wrap={true}>
                 {launches.map((item, index) => {
-                   return <LaunchPreview key={index} launch={item}/>
+                   return <LaunchPreview key={index + "_launch"} launch={item}/>
                 })}
             </Box>
         </Box>
