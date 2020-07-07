@@ -2,7 +2,6 @@ import React from "react";
 import Home from "./Home";
 import Launch from "./Launch";
 import LaunchDetail from "./LaunchDetail";
-import { Heading } from "grommet";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
